@@ -31,6 +31,7 @@ public class EventDemo01 {
         button1.addActionListener(myListener);
         frame.add(box2);
         frame.pack();
+        frame.setBounds(300,200,300,200);
         frame.setVisible(true);
     }
     private class MyListener implements ActionListener{
@@ -44,9 +45,7 @@ public class EventDemo01 {
             }
         }
     }
-
     public static void main(String[] args) {
-
         new EventDemo01().init();
 
 
