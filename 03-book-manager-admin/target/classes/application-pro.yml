@@ -1,0 +1,15 @@
+
+#服务名称
+spring:
+  application:
+    name: spring-boot-book-service
+#数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:
+    username: root
+    password: root
+#mp配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.liuqiang.book.mapper
