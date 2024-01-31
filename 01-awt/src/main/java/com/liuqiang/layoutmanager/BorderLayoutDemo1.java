@@ -26,6 +26,5 @@ public class BorderLayoutDemo1 {
         frame.setBounds(300,200,800,600);
         //设置window可见
         frame.setVisible(true);
-
     }
 }

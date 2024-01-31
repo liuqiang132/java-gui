@@ -2,10 +2,8 @@ package com.liuqiang.event;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import java.awt.event.TextEvent;
-import java.awt.event.TextListener;
+import java.awt.event.ContainerEvent;
+import java.awt.event.ContainerListener;
 
 /**
  * @author liuqiang132
@@ -25,21 +23,24 @@ public class EventDemo02 {
         choice.add("凌玉洁");
 
         //事件监听机制
-        textField.addTextListener(new TextListener() {
-            @Override
-            public void textValueChanged(TextEvent e) {
-
-                System.out.println("文本:"+textField.getText());
-            }
-        });
+        textField.addTextListener(e -> System.out.println("文本:"+textField.getText()));
 
         //事件的监听机制
-        choice.addItemListener(new ItemListener() {
+        choice.addItemListener(e -> System.out.println("列表:"+e.getItem()));
+
+
+        //事件处理机制
+        frame.addContainerListener(new ContainerListener() {
             @Override
-            public void itemStateChanged(ItemEvent e) {
-                System.out.println("列表:"+e.getItem());
+            public void componentAdded(ContainerEvent e) {
+                System.out.println("frame中添加了组件:"+e.getChild());
+            }
+            @Override
+            public void componentRemoved(ContainerEvent e) {
+
             }
         });
+
         Box Xbox = Box.createHorizontalBox();
         Xbox.add(choice);
         Xbox.add(textField);
