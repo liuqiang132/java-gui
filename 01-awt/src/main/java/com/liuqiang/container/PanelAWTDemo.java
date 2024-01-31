@@ -24,5 +24,7 @@ public class PanelAWTDemo {
 
         //其中按钮的文字乱码，需修改！！！！
 
+
+
     }
 }

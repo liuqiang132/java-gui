@@ -14,8 +14,8 @@ public class ScrollPaneDemo {
         //1.创建一个window可视化窗口
         Frame frame = new Frame("这是一个scrollPane窗口");
 
-        //2.创建一个scrollPane
-        ScrollPane scrollPane = new ScrollPane();
+        //2.创建一个scrollPane,总是油滚动条
+        ScrollPane scrollPane = new ScrollPane(ScrollPane.SCROLLBARS_ALWAYS);
         scrollPane.add(new TextField("这是一个文本框"));
         scrollPane.add(new Button("开始"));
 
