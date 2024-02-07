@@ -21,9 +21,10 @@ public class ScrollPaneDemo {
 
         //添加到window中
         frame.add(scrollPane);
-
+        frame.pack();//设置最佳大小
         //设置窗口的大小，位置,可见
         frame.setBounds(300,300,600,400);
+
         frame.setVisible(true);
     }
 }

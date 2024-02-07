@@ -12,7 +12,6 @@ public class GridBagLayoutDemo {
     public static void main(String[] args) {
         Frame frame = new Frame("这是一个GridBagLayout布局管理器");
 
-
         //太复杂，不能使用
 
         frame.pack();

@@ -20,6 +20,7 @@ public class BorderLayoutDemo1 {
         frame.add(new Button("西侧按钮"),BorderLayout.EAST);
         frame.add(new Button("东侧按钮"),BorderLayout.WEST);
 
+
         //设置最佳大小，
         frame.pack();
         //设置window窗口显示的大小及位置
